@@ -263,6 +263,20 @@ margin-right: 0;
     
 }
 
+.feature-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background-comand);
+}
+.icon-antenna::before {
+    background-image: url(../images/antenna.svg);
+    
+}
+
 /* -----------SECTION----------- */
 .section-title {
     margin-bottom: 50px;
