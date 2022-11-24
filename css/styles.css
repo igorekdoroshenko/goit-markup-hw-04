@@ -354,14 +354,22 @@ margin-right: 0;
     margin-right: 10px;
 }
 .team-social-link {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
+    height: 100%;
+    color: #afb1b8;
+    border-radius: 50%;
+    
+}
+.team-social-link:hover {
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
 }
 .team-social-icons {
-
+    fill: currentColor;
 }
 
 /* -----------CLIENTS----------- */
