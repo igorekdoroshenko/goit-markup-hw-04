@@ -431,8 +431,7 @@ ul {
 .footer-basement {
     padding-top: 60px;
     padding-bottom: 60px;
-    height: 252px;
-
+    
     background: var(--background-hiro-footer);
     font-family: 'Roboto';
     font-style: normal;
@@ -440,34 +439,57 @@ ul {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-}   
-.footer-adress {
-    margin-bottom: 12px;
-    display: inline-block;
-    margin-right: auto;
-    color: var(--main-white-color);
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
 }
-.adress-list {
-    margin-right: auto;
+.container-footer {
     width: 231px;
-    height: 21px;
-}
-.adress-list a {
-    margin-bottom: 12px;
-    margin-right: auto;
-    display: inline-block;
-    width: 231px;
-    height: 21px;
+    margin-left: 215px;
 
-    color: var(--color-footer-mail-tel);
-    text-decoration: none;
-}    
+    
+}   
+
+.adress-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-adress {
+  color: var(--main-background);
+  background: var(--background-hiro-footer);
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+
+  display: block;
+}
+
+.footer-item{
+  color: rgba(255, 255, 255, 0.6);
+  background: var(--background-hiro-footer);
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+
+  display: block;
+}
+
+.footer-list :hover,
+.footer-list :focus {
+  color: var(--accent-color);
+}
+ 
+/*-----------FOOTER ICON--------*/
+.footer-icon {
+    margin-left: 516px;
+    margin-top: 75px;
+
+}
 .footer-title {
     font-weight: 700;
     font-size: 14px;
@@ -477,7 +499,10 @@ ul {
     color: var(--main-white-color);
 }
 .footer-social {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .footer-social-items {
 
@@ -486,15 +511,18 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
+
+    width: 100%;
+    height: 100%;
+
     color: var(--main-white-color);
 }
 
-.footer-social-link::not(:last-child) {
+.footer-social-link:not(:last-child) {
     margin-right: 10px;
 }
 .footer-social-icons {
+    fill: var(--main-white-color);
 
 }
 
