@@ -34,6 +34,9 @@ body {
     font-family: var(--main-font); 
     color: var(--main-color);
     background-color: var(--main-white-color);
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ul {
@@ -242,11 +245,15 @@ ul {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    max-height: 600px;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/fonhiro.jpg);
     background-repeat: no-repeat;
     background-size: 200px 452px 280px 452px;
     background-position: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-title {
     font-weight: 900;
@@ -274,7 +281,7 @@ ul {
     /*background: var(--main-background);*/
 }
 .feature-list li:nth-child(4n) {
-margin-right: 0;
+    margin-right: 0;
 }
 
 .feature-list .title {
@@ -282,28 +289,15 @@ margin-right: 0;
 }
 
 .feature-image {
+    width: 270px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-       
-    width: 100%;
-    height: 100%;
-
+    background-color: var(--background-comand);
     margin-bottom: 30px;
-    border-radius: 4px;
 }
-.icon-antenna::before {
-    background-image: url(../images/antenna.svg);
-}
-.icon-clock::before {
-    background-image: url(../images/clock.svg);
-}
-.icon-diagram::before {
-    background-image: url(../images/diagram.svg);
-}
-.icon-anstronaut::before {
-    background-image: url(../images/astronaut.svg);
-}
+
 
 /* -----------SECTION----------- */
 .section-title {
@@ -437,6 +431,7 @@ margin-right: 0;
 .footer-basement {
     padding-top: 60px;
     padding-bottom: 60px;
+    height: 252px;
 
     background: var(--background-hiro-footer);
     font-family: 'Roboto';
@@ -448,8 +443,8 @@ margin-right: 0;
 }   
 .footer-adress {
     margin-bottom: 12px;
-    display: block;
-
+    display: inline-block;
+    margin-right: auto;
     color: var(--main-white-color);
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -458,13 +453,50 @@ margin-right: 0;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+.adress-list {
+    margin-right: auto;
+    width: 231px;
+    height: 21px;
+}
 .adress-list a {
     margin-bottom: 12px;
-    display: block;
+    margin-right: auto;
+    display: inline-block;
+    width: 231px;
+    height: 21px;
 
     color: var(--color-footer-mail-tel);
     text-decoration: none;
 }    
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-white-color);
+}
+.footer-social {
+
+}
+.footer-social-items {
+
+}
+.footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: var(--main-white-color);
+}
+
+.footer-social-link::not(:last-child) {
+    margin-right: 10px;
+}
+.footer-social-icons {
+
+}
 
 /* -----------PORTFOLIO----------- */
 .button-list {
